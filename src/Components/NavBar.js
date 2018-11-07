@@ -16,6 +16,7 @@ class NavBar extends Component {
         id={item.DOMiD}
         key={item.key}
         name={item.label}
+        href={item.href}
       />);
   }
 

@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import colors from '../res/colors';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 class Dashboard extends Component {
 
   render(){
     return(
-      <p>This is the dashboard</p>
+      <Link to="/dashboard">This is the dashboard</Link>
+
     );
   }
 };

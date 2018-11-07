@@ -1,5 +1,5 @@
 [
-  {"label" : "DashBoard", "DOMiD" : "nav_dashboard", "key" : 0},
-  {"label" : "Recorded Data", "DOMiD" : "nav_recordings", "key" : 1},
-  {"label" : "GPS Map", "DOMiD" : "nav_gpsmap", "key" : 2}
+  {"label" : "DashBoard", "DOMiD" : "nav_dashboard", "key" : 0, "href" : "/dashboard"},
+  {"label" : "Recorded Data", "DOMiD" : "nav_recordings", "key" : 1, "href" : "/recordings"},
+  {"label" : "GPS Map", "DOMiD" : "nav_gpsmap", "key" : 2, "href": "/gpsmap"}
 ]

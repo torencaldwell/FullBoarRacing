@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import colors from '../res/colors';
+import {NavLink} from 'react-router-dom';
 
 class ListItem extends Component {
   state = {style: styles.tabStyle};
 
   mouseEnter(event) {
-    console.log(styles);
     this.setState({style: styles.mouseOver});
   }
 
@@ -15,9 +15,9 @@ class ListItem extends Component {
 
   render(){
     return (
-      <div id={this.props.id} style={this.state.style} onMouseEnter={event => this.mouseEnter(event)} onMouseLeave={event => this.mouseLeave(event)}>
+      <NavLink to={this.props.href} style={this.state.style}onMouseEnter={event => this.mouseEnter(event)} onMouseLeave={event => this.mouseLeave(event)}>
         <p>{this.props.name}</p>
-      </div>
+      </NavLink>
     );
   }
 };
@@ -25,7 +25,9 @@ class ListItem extends Component {
 const styles = {
   tabStyle : {
     flex: 1,
+    textDecoration: 'none',
     backgroundColor: colors.PRIMARY_RED,
+    color: colors.BLACK,
     height: '60px',
     alignItems: 'center',
     justifyContent: 'center',
@@ -33,7 +35,9 @@ const styles = {
   },
   mouseOver : {
     flex: 1,
+    textDecoration: 'none',
     backgroundColor: colors.SECONDARY_RED,
+    color: colors.BLACK,
     height: '60px',
     alignItems: 'center',
     justifyContent: 'center',
